@@ -5,9 +5,15 @@ import children from '../children.vue'
 Vue.use(router)
 
 export default new router({
-  mode: 'history',
-  routes: [
-    {  path: '/', component:home  },
-    { name: 'children', path: '/children', component: children }
-  ]
+    mode: 'history',
+    routes: [{
+            path: '/',
+            component: home
+        },
+        {
+            name: 'children',
+            path: '/children',
+            component: children
+        }
+    ]
 })
