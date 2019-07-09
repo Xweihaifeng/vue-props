@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>我是App的children组件:</h2>
+        <h3>我是App的children组件:</h3>
         <div class="btn" @click="onButton">点击子组件传值</div>
     </div>
 </template>
