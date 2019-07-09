@@ -1,9 +1,7 @@
 <template>
     <div id="app">
-        <h1>App</h1>
-        <keep-alive>
-            <router-view />
-        </keep-alive>
+        <h1>我是父级组件App</h1>
+        <router-view />
     </div>
 </template>
 

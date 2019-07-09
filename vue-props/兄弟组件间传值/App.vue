@@ -1,9 +1,8 @@
 <template>
     <div id="app">
-        <h1>组件A</h1>
-        <div class="btn" @click="onButton">
-            组件A
-        </div>
+        <h1> 兄弟组件A： </h1>
+        <div class="btn" @click="onButton"> 组件A </div>
+        <hr />
         <children></children>
     </div>
 </template>
@@ -11,7 +10,6 @@
 <script>
     import connect from './eventbus'
     import children from './children'
-
     export default {
         data() {
             return {

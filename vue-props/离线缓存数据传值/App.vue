@@ -1,10 +1,8 @@
 <template>
     <div id="app">
-        <h1>组件A</h1>
-        <div class="btn" @click="onButton">
-            组件A按钮
-        </div>
-        <div class="btn" @click="offButton">清除sessionStorage</div>
+        <h1> 父级组件A： </h1>
+        <div class="btn" @click="onButton"> 组件A按钮 </div>
+        <div class="btn" @click="offButton"> 清除sessionStorage </div>
         <children></children>
     </div>
 </template>
@@ -14,7 +12,7 @@
     export default {
         data() {
             return {
-                message: "我组件A内的data传给组件B"
+                message: "我是组件A内的data传给组件B"
             };
         },
         components: {

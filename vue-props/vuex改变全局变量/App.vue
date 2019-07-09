@@ -1,8 +1,10 @@
 <template>
     <div id="app">
-        <h1>App</h1>
+        <h1>我是App的组件</h1>
         <h1 @click="onVuex" class="btn">点击修改vuex公共数据</h1>
+        <hr />
         <children></children>
+        <hr />
         <children2></children2>
     </div>
 </template>
@@ -21,6 +23,7 @@
         },
         methods: {
             onVuex() {
+                // dispatch 异步操作 this.$store.dispatch('actions的方法'，arg)
                 this.$store.dispatch("handleCity", this.city);
             }
         }

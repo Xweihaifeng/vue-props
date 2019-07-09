@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>home</h1>
+        <h1>我是子组件home</h1>
         <router-link :to="{name:'children',params:{id:id,msg:msg}}" class="btn">跳转到Children页面</router-link>
     </div>
 </template>

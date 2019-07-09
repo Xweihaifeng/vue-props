@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>children</h2>
+        <h2>我是子组件children</h2>
         <div>
             <span>home组件通过路由过来的ID：</span>
             <strong>{{id}}</strong>
