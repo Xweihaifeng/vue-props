@@ -7,7 +7,8 @@ Vue.use(Vuex)
 // 创建Vues实例
 const store = new Vuex.Store({
     state: {
-        count: 1
+        count: 1,
+        city: "上海"
     },
     getters: {
         getStateCount: function(state) {
@@ -20,6 +21,9 @@ const store = new Vuex.Store({
         },
         reduction(state) {
             state.count = state.count - 1;
+        },
+        handleCity(state, msg) {
+            state.city = msg;
         }
     },
     actions: {
@@ -28,6 +32,11 @@ const store = new Vuex.Store({
         },
         reductionFun(context) {
             context.commit('reduction');
+        },
+        handleCity(ctx, msg) {
+            // commit 同步操作 this.$store.commit('mutations的方法'，arg)
+            ctx.commit("handleCity", msg);
+            console.log(ctx, msg);
         }
     }
 })
