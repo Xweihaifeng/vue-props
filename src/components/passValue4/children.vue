@@ -4,6 +4,7 @@
         <span><strong>Vuex的city：</strong>{{this.$store.state.city}}</span>
     </div>
 </template>
+
 <script>
     export default {
         data() {
@@ -11,5 +12,5 @@
         }
     };
 </script>
-<style scoped>
-</style>
+
+<style scoped></style>

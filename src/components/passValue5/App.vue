@@ -1,8 +1,8 @@
 <template>
     <div id="app">
-        <h1> 父级组件A： </h1>
-        <div class="btn" @click="onButton"> 组件A按钮 </div>
-        <div class="btn" @click="offButton"> 清除sessionStorage </div>
+        <h2> 父级组件A： </h2>
+        <button class="btn" @click="onButton"> 组件A按钮 </button>
+        <button class="btn" @click="offButton"> 清除sessionStorage </button>
         <children></children>
     </div>
 </template>
@@ -33,15 +33,15 @@
 
 <style scoped>
     .btn {
-        min-width: 128px;
-        padding: 0 10px;
-        height: 46px;
-        border-radius: 4px;
-        background-color: #64c255;
-        color: #fff;
-        cursor: pointer;
-        display: inline-flex;
-        justify-content: center;
+        padding: 9px;
+        display: flex;
+        text-align: center;
         align-items: center;
+        background: #64c255;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        border-radius: 3px;
+        outline: none;
     }
 </style>

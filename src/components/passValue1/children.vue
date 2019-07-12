@@ -2,11 +2,8 @@
     <div>
         <h2>我是children 组件</h2>
         <div>
-            <div>动态数据：<span>{{activeName1}}</span>
-            </div>
-            <hr>
-            <div>常量数据：<span>{{activeName2}}</span>
-            </div>
+            <div>动态数据：<span><strong>{{activeName1}}</strong></span></div>
+            <div>常量数据：<span><strong>{{activeName2}}</strong></span></div>
         </div>
     </div>
 </template>
@@ -27,5 +24,4 @@
     };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

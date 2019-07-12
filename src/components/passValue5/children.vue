@@ -1,7 +1,6 @@
 <template>
     <div>
-        <h2> 子组件B： </h2>
-        <h3>{{msg}}</h3>
+        <h2> 子组件B：<strong>{{msg}}</strong></h2>
     </div>
 </template>
 <script>
@@ -18,6 +17,5 @@
     }
 </script>
 <style scoped>
-
 
 </style>

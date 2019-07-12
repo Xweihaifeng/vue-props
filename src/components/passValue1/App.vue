@@ -1,6 +1,8 @@
 <template>
     <div id="app">
-        <h1>我是App的组件</h1>
+        <h2>我是App的组件</h2>
+        <p>我是父组件的值：{{msgX}}</p>
+        <hr>
         <children :active-name1="msgX" active-name2="我是App父组件msgY的值"></children>
     </div>
 </template>
@@ -19,6 +21,4 @@
     }
 </script>
 
-<style>
-
-</style>
+<style></style>

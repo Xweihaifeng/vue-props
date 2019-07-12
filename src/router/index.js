@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import children1 from '../components/children1'
 import children2 from '../components/children2'
 import home from '../components/HelloWorld'
 import pass1 from '../components/passValue1/App'
@@ -9,6 +8,7 @@ import pass3 from '../components/passValue3/App'
 import pass4 from '../components/passValue4/App'
 import pass5 from '../components/passValue5/App'
 import pass6 from '../components/passValue6/App'
+import pass6child from '../components/passValue6/children'
 
 Vue.use(Router)
 
@@ -16,12 +16,8 @@ export default new Router({
     mode: 'history',
     routes: [{
             path: '/',
+            name: 'home',
             component: home
-        },
-        {
-            path: '/1',
-            name: 'children1',
-            component: children1
         },
         {
             path: '/2',
@@ -57,6 +53,11 @@ export default new Router({
             path: '/passValue6',
             name: 'pass6',
             component: pass6
+        },
+        {
+            path: '/passValue6/child',
+            name: 'children',
+            component: pass6child
         }
     ]
 })

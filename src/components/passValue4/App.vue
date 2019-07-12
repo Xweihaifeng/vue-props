@@ -1,10 +1,9 @@
 <template>
     <div id="app">
-        <h1>我是App的组件</h1>
-        <h1 @click="onVuex" class="btn">点击修改vuex公共数据</h1>
+        <h2>我是App的组件</h2>
+        <button @click="onVuex" class="btn">点击修改vuex公共数据</button>
         <hr />
         <children></children>
-        <hr />
         <children2></children2>
     </div>
 </template>
@@ -31,14 +30,15 @@
 </script>
 <style>
     .btn {
-        width: 360px;
-        height: 30px;
-        padding: 20px;
+        padding: 9px;
         display: flex;
         text-align: center;
         align-items: center;
-        line-height: 1px;
-        background: gold;
-        border-radius: 10px;
+        background: #64c255;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        border-radius: 3px;
+        outline: none;
     }
 </style>

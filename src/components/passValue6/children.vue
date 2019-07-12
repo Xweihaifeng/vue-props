@@ -2,11 +2,11 @@
     <div>
         <h2>我是子组件children</h2>
         <div>
-            <span>home组件通过路由过来的ID：</span>
+            <span>父组件通过路由过来的ID：</span>
             <strong>{{id}}</strong>
         </div>
         <div>
-            <span>home组件通过路由传过来的msg：</span>
+            <span>父组件通过路由传过来的msg：</span>
             <strong>{{msg}}</strong>
         </div>
     </div>
@@ -24,5 +24,4 @@
     };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

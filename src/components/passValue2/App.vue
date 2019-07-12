@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <h1>我是App的父级组件</h1>
+        <h2>我是App的父级组件</h2>
         <div>接收子组件的值：<strong>{{message}}</strong></div>
         <hr>
         <children @activeName="outChlid($event)"></children>
@@ -21,8 +21,7 @@
         },
         methods: {
             outChlid(data) {
-                console.log(data)
-                this.message = data
+                this.message = data;
             }
         },
         created() {
@@ -31,6 +30,4 @@
     }
 </script>
 
-<style>
-
-</style>
+<style></style>

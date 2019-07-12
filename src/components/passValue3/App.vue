@@ -1,7 +1,7 @@
 <template>
     <div id="app">
-        <h1> 兄弟组件A： </h1>
-        <div class="btn" @click="onButton"> 组件A </div>
+        <h2> 兄弟组件A：</h2>
+        <button class="btn" @click="onButton"> 组件A </button>
         <hr />
         <children></children>
     </div>
@@ -29,14 +29,15 @@
 
 <style scoped>
     .btn {
-        width: 128px;
-        height: 46px;
-        border-radius: 4px;
-        background-color: #64c255;
-        color: #fff;
-        cursor: pointer;
-        display: inline-flex;
-        justify-content: center;
+        padding: 9px;
+        display: flex;
+        text-align: center;
         align-items: center;
+        background: #64c255;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        border-radius: 3px;
+        outline: none;
     }
 </style>
