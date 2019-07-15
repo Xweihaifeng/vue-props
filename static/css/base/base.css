@@ -2,7 +2,7 @@
 
 /* 公用的css */
 ::-webkit-scrollbar { width: 0 }
-* { margin: 0; padding: 0; }
+* { margin: 0; padding: 0; line-height: 2em; }
 html, body { margin: 0; padding: 0; width: 100vw; height: 100vh; }
 a { text-decoration: none; display: inline-block; }
 img { vertical-align: middle; border: none }

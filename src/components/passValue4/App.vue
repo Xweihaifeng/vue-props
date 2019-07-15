@@ -28,10 +28,12 @@
         }
     };
 </script>
-<style>
+
+<style scoped>
     .btn {
-        padding: 9px;
-        display: flex;
+        height: 40px;
+        padding: 0 15px;
+        display: inline-flex;
         text-align: center;
         align-items: center;
         background: #64c255;

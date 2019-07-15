@@ -23,14 +23,16 @@
 
 <style scoped>
     .btn {
-        width: 135px;
-        height: 46px;
-        border-radius: 4px;
-        background-color: #64c255;
-        color: #fff;
-        cursor: pointer;
+        height: 40px;
+        padding: 0 15px;
         display: inline-flex;
-        justify-content: center;
+        text-align: center;
         align-items: center;
+        background: #64c255;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        border-radius: 3px;
+        outline: none;
     }
 </style>

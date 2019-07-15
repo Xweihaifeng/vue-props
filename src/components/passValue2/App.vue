@@ -30,4 +30,18 @@
     }
 </script>
 
-<style></style>
+<style scoped>
+    .btn {
+        height: 40px;
+        padding: 0 15px;
+        display: inline-flex;
+        text-align: center;
+        align-items: center;
+        background: #64c255;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        border-radius: 3px;
+        outline: none;
+    }
+</style>

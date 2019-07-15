@@ -3,6 +3,7 @@
         <h2> 子组件B：<strong>{{msg}}</strong></h2>
     </div>
 </template>
+
 <script>
     export default {
         data() {
@@ -16,6 +17,5 @@
         }
     }
 </script>
-<style scoped>
 
-</style>
+<style scoped></style>

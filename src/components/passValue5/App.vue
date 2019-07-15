@@ -1,9 +1,10 @@
 <template>
     <div id="app">
         <h2> 父级组件A： </h2>
-        <button class="btn" @click="onButton"> 组件A按钮 </button>
+        <button class="btn" @click="onButton"> 设置sessionStorage </button>
         <button class="btn" @click="offButton"> 清除sessionStorage </button>
-        <children></children>
+        <button class="btn" @click="refButton"> 刷新sessionStorage </button>
+        <children v-if="DestroyIncomeStatistics == true"></children>
     </div>
 </template>
 
@@ -26,6 +27,11 @@
             offButton() {
                 // 清除sessionStorage
                 sessionStorage.clear();
+            },
+            refButton() {
+                // window.location.reload();
+                console.info('refre');
+                this.$router.push({path: '/passValue5'});
             }
         }
     };
@@ -33,8 +39,9 @@
 
 <style scoped>
     .btn {
-        padding: 9px;
-        display: flex;
+        height: 40px;
+        padding: 0 15px;
+        display: inline-flex;
         text-align: center;
         align-items: center;
         background: #64c255;
