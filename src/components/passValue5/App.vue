@@ -4,7 +4,7 @@
         <button class="btn" @click="onButton"> 设置sessionStorage </button>
         <button class="btn" @click="offButton"> 清除sessionStorage </button>
         <button class="btn" @click="refButton"> 刷新sessionStorage </button>
-        <children v-if="DestroyIncomeStatistics == true"></children>
+        <children></children>
     </div>
 </template>
 
@@ -25,16 +25,16 @@
                 sessionStorage.setItem("activeName", DateA);
             },
             offButton() {
-                // 清除sessionStorage
                 sessionStorage.clear();
             },
             refButton() {
-                // window.location.reload();
                 console.info('refre');
-                this.$router.push({path: '/passValue5'});
+                // this.$router.push({path: '/passValue5'});
+                // window.location.pathname = '/passValue5'
+                // window.location.reload();
             }
         }
-    };
+    }
 </script>
 
 <style scoped>

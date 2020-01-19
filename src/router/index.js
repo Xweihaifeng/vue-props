@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
+import swiper from '../components/templ/swiper'
 import children2 from '../components/children2'
 import home from '../components/HelloWorld'
 import pass1 from '../components/passValue1/App'
@@ -18,6 +20,11 @@ export default new Router({
             path: '/',
             name: 'home',
             component: home
+        },
+        {
+            path: '/swiper',
+            name: 'swiper',
+            component: swiper
         },
         {
             path: '/2',
